@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@400;700&family=Roboto:wght@400;700;900&family=Sora:wght@100..800&display=swap");
 
 :root {
-  --primary: #6a11cb;
+  --primary: #883AE1;
   --secondary: #2575fc;
+  --background: #FAFAF9;
+  --text: #20293A;
+  --sub-text: #6C727F;
+  --border: #E5EAF0;
   --gray: #b5b8bb;
   --white: #fff;
   --black: #000;
-  --auxiliar: #e6d6fc;
+  --auxiliar: #E6D6FC;
 }
 
 html {
@@ -44,8 +48,8 @@ a {
 }
 
 img {
-  max-width: 100%;
-  display: block;
+  max-width: 33.6rem;
+  height: 15.2rem;
 }
 
 h1,
@@ -74,25 +78,23 @@ p {
 
 /** Contenedor **/
 
-.container {
-  max-width: 42rem;
+.container, 
+.card-header,
+.card-content {
+  max-width: 36.8rem;
 }
 
 .card {
-  border-radius: 2rem;
-  padding: 1.6rem;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(1rem);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(1rem);
+  width: 100%;
   border-radius: 1rem;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
 }
 
 /** Header **/
 
 .card-header {
+  padding: 1.6rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -105,11 +107,10 @@ p {
 }
 
 .card-header_tag {
-  border-radius: 2rem;
-  padding: 0.1rem;
+  border-radius: 1.6rem;
+  padding: 0.4rem 1.6rem;
   width: 10rem;
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--primary);
   background: var(--auxiliar);
@@ -119,28 +120,23 @@ p {
 /** Contenido **/
 
 .card-content {
+  padding: 0 1.6rem;
   width: 90%;
   margin-bottom: 2rem;
 }
 
 .card-content_title {
   font-weight: 600;
-  margin-bottom: 0.8rem;
-}
-
-.card-content_text {
-  color: var(--gray);
-  text-wrap: balance;
+  margin-bottom: 0.6rem;
 }
 
 .card-footer {
-  padding: 1rem 1rem 0 1rem;
-  margin-top: 0.5rem;
-  border-top: 0.1rem solid var(--gray);
+  padding: 2rem 1.6rem;
+  border-top: 0.1rem solid var(--border);
 }
 
 footer {
-    padding: 2rem;
+    padding: 2rem 1.6rem;
     bottom: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.1);
