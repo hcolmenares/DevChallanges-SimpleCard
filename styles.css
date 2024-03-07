@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@400;700&family=Roboto:wght@400;700;900&family=Sora:wght@100..800&display=swap");
+
+:root {
+  --primary: #6a11cb;
+  --secondary: #2575fc;
+  --gray: #b5b8bb;
+  --white: #fff;
+  --black: #000;
+  --auxiliar: #e6d6fc;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: var(--white);
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Globales */
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+/** Contenedor **/
+
+.container {
+  max-width: 42rem;
+}
+
+.card {
+  border-radius: 2rem;
+  padding: 1.6rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1rem);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(1rem);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/** Header **/
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+.card-header_image {
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.card-header_tag {
+  border-radius: 2rem;
+  padding: 0.1rem;
+  width: 10rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: var(--auxiliar);
+  text-align: center;
+}
+
+/** Contenido **/
+
+.card-content {
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.card-content_title {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.card-content_text {
+  color: var(--gray);
+  text-wrap: balance;
+}
+
+.card-footer {
+  padding: 1rem 1rem 0 1rem;
+  margin-top: 0.5rem;
+  border-top: 0.1rem solid var(--gray);
+}
+
+footer {
+    padding: 2rem;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    position: absolute;
+}
